@@ -214,7 +214,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4975156369017494, guid: 40f7d7e3f66eb0d4fb459eb2a604333d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -22
+      value: -13
       objectReference: {fileID: 0}
     - target: {fileID: 4975156369017494, guid: 40f7d7e3f66eb0d4fb459eb2a604333d, type: 2}
       propertyPath: m_LocalRotation.x
@@ -298,7 +298,7 @@ Rigidbody:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1836659158}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 0.12
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1

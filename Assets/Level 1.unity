@@ -252,7 +252,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4247796054068780, guid: 915d0874e74347b4abd5e9faa007ead8, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.087
+      value: 0.082
       objectReference: {fileID: 0}
     - target: {fileID: 4247796054068780, guid: 915d0874e74347b4abd5e9faa007ead8, type: 2}
       propertyPath: m_LocalPosition.z
@@ -277,6 +277,26 @@ Prefab:
     - target: {fileID: 4247796054068780, guid: 915d0874e74347b4abd5e9faa007ead8, type: 2}
       propertyPath: m_RootOrder
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 82419005046432942, guid: 915d0874e74347b4abd5e9faa007ead8,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 4c1ac3bf03249c14abf977fdba0b965d, type: 3}
+    - target: {fileID: 54159018183333988, guid: 915d0874e74347b4abd5e9faa007ead8,
+        type: 2}
+      propertyPath: m_Mass
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 135668016273449612, guid: 915d0874e74347b4abd5e9faa007ead8,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 82419005046432942, guid: 915d0874e74347b4abd5e9faa007ead8,
+        type: 2}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 915d0874e74347b4abd5e9faa007ead8, type: 2}

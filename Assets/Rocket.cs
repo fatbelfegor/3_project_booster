@@ -23,6 +23,17 @@ public class Rocket : MonoBehaviour {
         Rotate();
 	}
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        switch (collision.gameObject.tag)
+        {
+            case "Friendly":
+                {
+
+                }
+        }
+    }
+
     private void Thrust()
     {
         if (Input.GetKey(KeyCode.Space))

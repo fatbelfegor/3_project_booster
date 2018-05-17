@@ -25,13 +25,13 @@ public class Rocket : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        switch (collision.gameObject.tag)
-        {
-            case "Friendly":
-                {
-
-                }
-        }
+        //switch (collision.gameObject.tag)
+        //{
+        //    case "Friendly":
+        //        {
+//
+  //              }
+    //    }
     }
 
     private void Thrust()

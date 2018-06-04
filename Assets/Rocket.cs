@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Rocket : MonoBehaviour {
 
@@ -25,13 +23,19 @@ public class Rocket : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        //switch (collision.gameObject.tag)
-        //{
-        //    case "Friendly":
-        //        {
-//
-  //              }
-    //    }
+        switch (collision.gameObject.tag)
+        {
+            case "Friendly":
+                 break;
+            case "Finish":
+                 print("Hit finish");
+                SceneManager.LoadScene(1);
+                 break;
+            default:
+                 print("Dead");
+                SceneManager.LoadScene(0);
+                 break;
+        }
     }
 
     private void Thrust()

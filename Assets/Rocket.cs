@@ -9,6 +9,9 @@ public class Rocket : MonoBehaviour {
     Rigidbody rigidBody;
     AudioSource audioSource;
 
+    enum State { Alive, Dying, Transcending }
+    State state = State.Alive;
+
 	// Use this for initialization
 	void Start () {
         rigidBody = GetComponent<Rigidbody>();
@@ -28,14 +31,19 @@ public class Rocket : MonoBehaviour {
             case "Friendly":
                  break;
             case "Finish":
-                 print("Hit finish");
-                SceneManager.LoadScene(1);
-                 break;
+                print("Hit finish");
+                LoadNextScene();
+                break;
             default:
                  print("Dead");
                 SceneManager.LoadScene(0);
                  break;
         }
+    }
+
+    private static void LoadNextScene()
+    {
+        SceneManager.LoadScene(1);
     }
 
     private void Thrust()
